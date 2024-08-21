@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen">
+    <h1>Guess My Number</h1>
+    <br>
+    <h4>Guess a random number</h4>
+    <br>
+    <div id="range">
+        <input type="number" id="start" class="text" value="1" placeholder="Lower limit">
+        <input type="number" id="end" class="text" value="100" placeholder="Upper limit">
+        <button onclick="newTarget()" class="Button" class="text">New Target</button>
+    </div>
+    <br>
+    <input readonly type="text" id="message"  value="Please guess a number,enter it,and press Guess:">
+    <br>
+    <div id="Guess">
+        <input type="number" id="guessNumber" class="text" placeholder="Write heare...">
+        <button class="Button" onclick="guess()">Guess</button>
+    </div>
+<h2></h2>
+<div id="instructions">
+<h4>Instructions</h4>
+<ul type="disc">
+    <li>
+        Enter the range of numbers you want the targetnumber 
+        to be between,press New Target
+    </li>
+    <li>
+        Enter your guess
+    </li>
+    <li>
+        See if your guess is too high or too low
+    </li>
+    <li>
+        Change your guess
+    </li>
+    <li>
+        The app will tell you when you are right,and how many 
+        guesses you had
+    </li>
+</ul>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
